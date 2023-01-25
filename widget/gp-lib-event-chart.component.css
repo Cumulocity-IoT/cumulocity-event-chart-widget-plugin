@@ -1,0 +1,13 @@
+
+.datePickerDiv .mat-form-field-appearance-outline .mat-form-field-infix
+{ 
+  padding: 0em 0 0.5em 0 !important;
+}
+.date-input{
+  margin: 5px;
+  width: 150px;
+  
+}
+.datePickerDiv{
+  margin-left: 15px;
+}

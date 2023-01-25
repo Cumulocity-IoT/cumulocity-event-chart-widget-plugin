@@ -1,0 +1,38 @@
+<div>
+	<div style="height: 40px;">
+		<div style="float: right; margin-right: 10px;">
+			<button type="button" class="btn btn-link c8y-realtime" title="Toggle realtime" (click)="toggle()">
+				<span [ngClass]="realtimeState?'c8y-pulse active' : 'c8y-pulse inactive'"></span>
+				<span>Realtime</span>
+			</button>
+			<button style="color:#1776BF;margin-right: 5px;" type="button" class="btn btn-clean" (click)="refresh()"><i
+					c8yIcon="refresh"></i></button>
+		</div>
+	</div>
+
+	<div class="datePickerDiv">
+		<input class="date-input" placeholder="From" [bsConfig]="{ customTodayClass: 'today' }"
+			(ngModelChange)="dateChanged('from',$event)" [(ngModel)]="fromDate" title="From Date" bsDatepicker />
+
+
+		<input class="date-input" placeholder="To" [bsConfig]="{ customTodayClass: 'today' }"
+			(ngModelChange)="dateChanged('to',$event)" [(ngModel)]="toDate" title="To Date" bsDatepicker />
+
+		<button type="button" title="Filter date range" class="btn btn-default btn-sm" (click)="filter()">
+			<i c8yIcon="filter"></i>
+		</button>
+	</div>
+
+
+
+	<div *ngIf="dataLoaded | async">
+		<div style="display: block" *ngIf="dataSetHasData">
+			<canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [colors]="barChartColors"
+				[options]="barChartOptions" [chartType]="barChartType">
+			</canvas>
+		</div>
+		<div *ngIf="!dataSetHasData">
+			   No data found for current date range.
+		</div>
+	</div>
+</div>
