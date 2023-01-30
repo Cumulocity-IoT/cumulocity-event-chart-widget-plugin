@@ -60,13 +60,6 @@ The charts available include
 
 * This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin/releases/download/1.0.0-beta/event-chart-runtime-widget-1.0.0-beta.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages.
 
-**Prerequisites:**
-  
-* Git
-  
-* NodeJS (release builds are currently built with `v14.18.0`)
-  
-* NPM (Included with NodeJS)
 
 **Instructions**
 
