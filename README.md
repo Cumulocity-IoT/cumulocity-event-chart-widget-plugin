@@ -1,9 +1,7 @@
 # Event Chart Widget for Cumulocity [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin/releases/download/1.0.0-beta/event-chart-runtime-widget-1.0.0-beta.zip)
 
-    
 This Event Chart widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit.
 The Event Chart widget help you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.
-
 
 ### Please note that this plugin is in currently under BETA mode.
 
@@ -13,7 +11,6 @@ The Event Chart widget help you to display the chart for the specific event type
 |--------------------|-------------|--------------------|
 | 2.x.x(coming soon) | >= 1016.x.x | 1.x.x              | 
 
-  
 
 The charts available include
 
@@ -31,14 +28,7 @@ The charts available include
 
   * Stack Chart
 
-  The widget also comes with an inbuilt color picker, which helps one to customize chart/border colors.
-### Please choose Event Chart Widget release based on Cumulocity/Application builder version:
-
-|APPLICATION BUILDER | CUMULOCITY | EVENT CHART WIDGET    |
-|--------------------|------------|-----------------------|
-| 1.3.x              | >= 1011.x.x| 2.x.x                 |
-| 1.2.x              | 1010.x.x   | 1.x.x                 |  
-
+  The widget also comes with an inbuilt color picker, which helps one to customize chart/border colors. 
 
 ![eventchart](https://user-images.githubusercontent.com/89508319/155273813-dbb310c6-78d4-49f6-b258-1fb7916e2c53.JPG)
 
@@ -50,45 +40,12 @@ The charts available include
 *  **Supports Grouped charts and stack Charts:** Based on filter type selected in configuration.
 *  **Supports different flavors charts:** Based on chart type field in configuration.
 
-## Supported Cumulocity Environments:
-  
-*  **App Builder:** Tested with Cumulocity App Builder version 1.3.0   
    
 ## Installation
 
 ### Runtime Widget Deployment?
 
 * This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin/releases/download/1.0.0-beta/event-chart-runtime-widget-1.0.0-beta.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages.
-
-
-**Instructions**
-
-1. Clone the repository:
-```
-git clone https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin.git
-```
-2. Change directory:
-
-  ```cd cumulocity-event-chart-widget-plugin```
-
-3. run npm i command to install all library files specified in source code
-
-  ```npm i ``` 
-
-4. run npm run buildMinor command to create a binary file under dist folder
-
-  ```npm run buildMinor ``` 
-
-5. (Optional) Local development server:
-  
-  ```npm start```
-
-6. Build the app:
-
-  ```npm run build```
-
-7. Deploy the app:
-  ```npm run deploy```
 
 ## QuickStart
 
@@ -107,7 +64,6 @@ This guide will teach you how to add widget in your existing or new dashboard.
 7. Click `Save`
 
 Congratulations! Event Chart is configured.
-
 
 ## User Guide
 
