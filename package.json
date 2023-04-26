@@ -1,16 +1,20 @@
 {
   "name": "cumulocity-event-chart-widget-plugin",
-  "version": "1.0.0-beta",
-  "description": "This Event Chart Widget help you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.",
+  "version": "1.0.0",
+  "description": "The Event Chart Widget helps you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.",
   "scripts": {
     "start": "c8ycli server",
-    "build": "c8ycli build",
+    "build": "c8ycli build --env.mode=production",
     "deploy": "c8ycli deploy",
     "postinstall": "ngcc",
     "prebuild": " gulp clean",
     "postbuild": " gulp bundle"
   },
-  "keywords": [],
+  "keywords": [
+    "Cumulocity",
+    "Plugin",
+    "Widget"
+  ],
   "author": "Darpankumar Lalani - Software AG, Global Presales",
   "license": "Apache-2.0",
   "dependencies": {
@@ -56,11 +60,11 @@
   },
   "c8y": {
     "application": {
-      "name": "cumulocity Event Chart Widget Plugin",
-      "description": "This Event Chart Widget help you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.",
-      "contextPath": "event-chart-runtime-widget",
-      "key": "event-chart-runtime-widget-application-key",
-      "globalTitle": "This Event Chart Widget help you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.",
+      "name": "Event Chart Widget",
+      "description": "The Event Chart Widget helps you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.",
+      "contextPath": "sag-ps-pkg-event-chart-widget",
+      "key": "sag-ps-pkg-event-chart-widget-application-key",
+      "globalTitle": "The Event Chart Widget helps you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.",
       "tabsHorizontal": true,
       "isPackage": true,
       "noAppSwitcher": true,
@@ -71,10 +75,10 @@
       },
       "exports": [
         {
-          "name": "Event Chart Widget Plugin",
+          "name": "Event Chart Widget",
           "module": "GpLibEventChartModule",
           "path": "./widget/gp-lib-event-chart.module.ts",
-          "description": "This Event Chart Widget help you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value."
+          "description": "The Event Chart Widget helps you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value."
         }
       ],
       "remotes": {

@@ -1,7 +1,7 @@
-
-<div class="form-group">
+<div class="row form-group">
+  <div class="col-sm-12 col-md-6">
     <label translate>Bar Chart Type</label>
-    <select class="browser-default custom-select form-control"  name="config.type" [(ngModel)]="config.type">
+    <select class="browser-default custom-select form-control" name="config.type" [(ngModel)]="config.type">
       <option selected>Open this select menu</option>
       <option value="bar">Vertical Bar Chart</option>
       <option value="horizontalBar">Horizontal Bar Chart</option>
@@ -11,41 +11,56 @@
       <option value="line">Line Chart</option>
       <option value="radar">Radar Chart</option>
     </select>
+  </div>
 </div>
-<div class="form-group">
+<div class="row form-group">
+  <div class="col-sm-12 col-md-6">
     <label translate>Legend</label>
-    <select class="browser-default custom-values form-control"  name="config.legend" [(ngModel)]="config.legend">
+    <select class="browser-default custom-values form-control" name="config.legend" [(ngModel)]="config.legend">
       <option selected value="none">None</option>
       <option selected value="top">Top</option>
       <option value="left">Left</option>
     </select>
+  </div>
 </div>
-<div class="form-group">
-  <label translate>Event Type</label>
-  <input class="form-control" type="text" name="config.eventType" [(ngModel)]="config.eventType" />
+<div class="row form-group">
+  <div class="col-sm-12 col-md-6">
+    <label translate>Event Type</label>
+    <input class="form-control" type="text" name="config.eventType" [(ngModel)]="config.eventType" />
+  </div>
 </div>
-<div class="form-group">
-  <label translate>Group by</label>
-  <input class="form-control" type="text" name="config.groupby" [(ngModel)]="config.groupby" />
+<div class="row form-group">
+  <div class="col-sm-12 col-md-6">
+    <label translate>Group by</label>
+    <input class="form-control" type="text" name="config.groupby" [(ngModel)]="config.groupby" />
+  </div>
 </div>
-<div class="form-group">
-  <label translate>Filter</label>
-  <input class="form-control" type="text" name="config.filter" [(ngModel)]="config.filter" />
+<div class="row form-group">
+  <div class="col-sm-12 col-md-6">
+    <label translate>Filter</label>
+    <input class="form-control" type="text" name="config.filter" [(ngModel)]="config.filter" />
+  </div>
 </div>
 <br>
 
-<div style="display: flex;">
-  <div style="flex-grow:1 ; margin-right: 5px;">
+<div class="row col-sm-12">
+  <div class="col-sm-6" style="margin-left: inherit">
     <label translate>Chart Color</label>
-    <input class="form-control" type="text" id="colorInput"  name="config.color" (click)= "openColorPicker()" style="width:100%" [(ngModel)]="config.color"  placeholder="Color code i.e #0899CC or leave blank for default colors">
-    <app-color-picker [ngClass]="isOpenCP? 'colorPickerModal': 'hideColorPicker'" (closeColorPicker)="closeColorPicker()" (colorSet) ="setSelectedColor($event)" ></app-color-picker>
+    <input class="form-control" type="text" id="colorInput" name="config.color" (click)="openColorPicker()"
+      style="width:100%" [(ngModel)]="config.color"
+      placeholder="Color code i.e #0899CC or leave blank for default colors">
+    <app-color-picker [ngClass]="isOpenCP? 'colorPickerModal': 'hideColorPicker'"
+      (closeColorPicker)="closeColorPicker()" (colorSet)="setSelectedColor($event)"></app-color-picker>
   </div>
-  <div style="flex-grow:1;margin-right: 5px;">
+  <div class="col-sm-6" style="margin-left: inherit">
     <label translate>Border Color</label>
-    <input class="form-control" type="text" id="colorInputBorder"  name="config.borderColor" (click)= "openBorderColorPicker()" style="width:100%" [(ngModel)]="config.borderColor" placeholder="Choose border color">
-    <app-color-picker [ngClass]="borderCP? 'colorPickerModal': 'hideColorPicker'" (closeColorPicker)="closeBorderColorPicker()" (colorSet) ="setSelectedBorderColor($event)" ></app-color-picker>
+    <input class="form-control" type="text" id="colorInputBorder" name="config.borderColor"
+      (click)="openBorderColorPicker()" style="width:100%" [(ngModel)]="config.borderColor"
+      placeholder="Choose border color">
+    <app-color-picker [ngClass]="borderCP? 'colorPickerModal': 'hideColorPicker'"
+      (closeColorPicker)="closeBorderColorPicker()" (colorSet)="setSelectedBorderColor($event)"></app-color-picker>
   </div>
 </div>
 <div>
-  <input type="submit" (click)="SubmitData()" value="Submit" />
+  <input type="submit" (click)="SubmitData()" value="Submit"  style="margin-top:15px"/>
 </div>

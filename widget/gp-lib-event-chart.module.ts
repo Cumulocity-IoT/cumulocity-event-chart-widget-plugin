@@ -46,7 +46,7 @@ import { ColorPaletteComponent } from './color-picker/color-palette/color-palett
         useValue: {
             id: 'event chart widget',
             label: 'Event Chart',
-            description: 'Event Chart Module',
+            description: 'The Event Chart Widget helps you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.',
             previewImage: preview.previewImage,
             component: GpLibEventChartComponent,
             configComponent: GpLibEventChartConfig,
