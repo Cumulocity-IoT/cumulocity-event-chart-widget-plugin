@@ -1,4 +1,4 @@
-# Event Chart Widget for Cumulocity [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin/releases/download/1.0.0/sag-ps-pkg-event-chart-widget-1.0.0.zip)
+# Event Chart Widget for Cumulocity [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin/releases/download/1.0.1/sag-ps-pkg-event-chart-widget-1.0.1.zip)
 
 This Event Chart widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit.
 The Event Chart widget help you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.
@@ -43,7 +43,7 @@ The charts available include
 
 ### Runtime Widget Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin/releases/download/1.0.0/sag-ps-pkg-event-chart-widget-1.0.0.zip) and install via Administrations --> Ecosystems --> Applications --> Packages.
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-chart-widget-plugin/releases/download/1.0.1/sag-ps-pkg-event-chart-widget-1.0.1.zip) and install via Administrations --> Ecosystems --> Applications --> Packages.
 
 ## QuickStart
 
