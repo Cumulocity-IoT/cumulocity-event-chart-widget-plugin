@@ -1,13 +1,17 @@
-
-.datePickerDiv .mat-form-field-appearance-outline .mat-form-field-infix
-{ 
+.datePickerDiv .mat-form-field-appearance-outline .mat-form-field-infix {
   padding: 0em 0 0.5em 0 !important;
 }
-.date-input{
+
+.date-input {
   margin: 5px;
   width: 150px;
-  
+
 }
-.datePickerDiv{
+
+.datePickerDiv {
   margin-left: 15px;
+}
+
+.bs-datepicker-body table td, .bs-datepicker-body table th {
+  color : var(--navigator-active-bg, #000) !important;
 }
