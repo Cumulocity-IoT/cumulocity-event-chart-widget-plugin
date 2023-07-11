@@ -28,7 +28,7 @@ The charts available include
 
   The widget also comes with an inbuilt color picker, which helps one to customize chart/border colors. 
 
-![eventchart](https://user-images.githubusercontent.com/89508319/155273813-dbb310c6-78d4-49f6-b258-1fb7916e2c53.JPG)
+![Image](images/event-chart.jpg)
 
     
 ## Features
@@ -65,7 +65,7 @@ Congratulations! Event Chart is configured.
 
 ## User Guide
 
-![EventChartConfig](https://user-images.githubusercontent.com/67993842/92461930-76bc1b00-f1e7-11ea-9ccd-08760d34487e.PNG)
+![Image](images/bar-chart.png)
 
 1. Target Assets/Devices - deviceid/groupid of interest
 2. Group By- provide the field name from the device managed object on which you want to group.

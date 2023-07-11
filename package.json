@@ -85,7 +85,21 @@
         "widget-plugin": [
           "GpLibEventChartModule"
         ]
-      }
+      },
+      "copy": [
+        {
+          "from": "images/event-chart.jpg",
+          "to": "images/event-chart.jpg"
+        },
+        {
+          "from": "images/bar-chart.png",
+          "to": "images/bar-chart.png"
+        },
+        {
+          "from": "LICENSE",
+          "to": "LICENSE.txt"
+        }
+      ]
     },
     "cli": {}
   },
