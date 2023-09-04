@@ -5,7 +5,7 @@
 .date-input {
   margin: 5px;
   width: 150px;
-
+  background-color: var(--c8y-form-control-background-default);
 }
 
 .datePickerDiv {
