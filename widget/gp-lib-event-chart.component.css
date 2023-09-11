@@ -15,3 +15,9 @@
 .bs-datepicker-body table td, .bs-datepicker-body table th {
   color : var(--navigator-active-bg, #000) !important;
 }
+.bs-datepicker-head button{
+  color: var(--component-actions-color,var(--brand-primary,var(--brand-dark,#0b385b)));
+}
+.bs-datepicker-head button:hover{
+  color:var(--tooltip-background,var(--brand-primary,#1776bf));
+}
