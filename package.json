@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-event-chart-widget-plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The Event Chart Widget helps you to display the chart for the specific event type. It groups the events based on the entered group by parameter and displays the count for each group by the parameter value.",
   "scripts": {
     "start": "c8ycli server",
@@ -15,7 +15,7 @@
     "Plugin",
     "Widget"
   ],
-  "author": "Darpankumar Lalani - Software AG, Global Presales",
+  "author": "Darpankumar Lalani - Cumulocity Ecosystem",
   "license": "Apache-2.0",
   "dependencies": {
     "@angular/animations": "14.0.6",
